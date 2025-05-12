@@ -1,0 +1,168 @@
+
+
+:root {
+    --primary-color: #250DAB;
+    --container-background-color: #F5F7FF;
+    --main-font-color: #07113C;
+    --secondary-font-color: #A6A9B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html {
+    width: 794px;
+    padding-inline: 72px;
+    margin: 0 auto;
+}
+
+body {
+    border-block: 14px solid var(--primary-color);
+    font-family: 'Poppins';
+}
+
+header {
+    padding: 35px 65px;
+    flex-direction: column;
+    row-gap: 5px;
+    letter-spacing: 3px;
+}
+
+h1, h2, h3, .uppercase {
+    text-transform: uppercase;
+    font-weight: 200 !important;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 14.5px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+h3:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.gras {
+    font-weight: 1000;
+}
+
+.flex {
+    display: flex;
+}
+
+#contact {
+    justify-content: space-between;
+    border-block: 1px solid var(--primary-color);
+    padding: 9px;
+    list-style: none;
+
+}
+
+#contact li {
+    column-gap: 9px;
+}
+
+#contact li p {
+    font-size: 9px;
+    align-self: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.fa {
+    height: 23px;
+    width: 23px;
+    font-size: 13px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#formations_et_experiences, #competences_loisirs_liens {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    column-gap: 20px;
+}
+
+#formations, #competences {
+    width: 40%;
+    background-color: var(--container-background-color);
+    padding: 20px;
+}
+
+#loisirs_liens {
+    width: 60%;
+    height: 100%;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+#loisirs, #liens {
+    background-color: var(--container-background-color);
+    padding: 20px;
+}
+
+#loisirs p {
+    font-size: 9px;
+    margin-top: 3px;
+}
+
+#liens a {
+    color: var(--main-font-color);
+    font-size: 9px;
+}
+
+.item {
+    font-size: 9px;
+    margin-block: 16px;
+}
+
+.gris {
+    color: var(--secondary-font-color);
+}
+
+#experiences ul li {
+    margin-left: 12.5px;
+    margin-top: 2px;
+    text-transform: none;
+}
+
+#experiences_items {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 9.5px ;
+}
+
+.titre {
+    position: relative;
+}
+
+.titre::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -13.5px;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+}
